@@ -1,9 +1,11 @@
 {
-  "name": "template-strategy-builder-plugin",
+  "name": "uniswap-v2-strategy-builder",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "compile": "hardhat compile && forge builder"
+    "compile": "hardhat compile && forge build",
+    "coverage": "forge coverage --report lcov && genhtml lcov.info  --output-dir coverage",
+    "deploy": "hardhat run scripts/deploy.ts --network $NETWORK"
   },
   "keywords": [],
   "author": "",

@@ -1,3 +1,4 @@
 {
-  "SendCoinActionModule#SendCoinAction": "0x00CdEe323e1d01b5456B2854D2A46A156C893Cb4"
+  "UniswapV2ActionsModule#UniswapV2LPActions": "0xF47c41bc6945d9F644DEBDde933786D8adc0C7C6",
+  "UniswapV2ActionsModule#UniswapV2SwapActions": "0xB4b15Bbb7E378d9A7c544DeEf5b748D70b296a6F"
 }
