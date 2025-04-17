@@ -1,7 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.28;
 
-import {IAction} from "strategy-builder-plugin/src/interfaces/IAction.sol";
+import {IAction} from "strategy-builder-plugin/contracts/interfaces/IAction.sol";
+
 
 interface IUniswapV2LPActions is IAction {
     // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓

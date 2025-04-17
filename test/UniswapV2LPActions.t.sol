@@ -4,7 +4,7 @@ pragma solidity ^0.8.26;
 import {Test, console} from "forge-std/Test.sol";
 
 import {UniswapV2LPActions} from "../contracts/action/UniswapV2LPActions.sol";
-import {IAction} from "strategy-builder-plugin/src/interfaces/IAction.sol";
+import {IAction} from "strategy-builder-plugin/contracts/interfaces/IAction.sol";
 import {IUniswapV2Base} from "../contracts/action/interfaces/IUniswapV2Base.sol";
 import {IUniswapV2Router01} from "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol";
 import {IUniswapV2Factory} from "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol";

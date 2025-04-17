@@ -5,6 +5,7 @@
   "scripts": {
     "compile": "hardhat compile && forge build",
     "coverage": "forge coverage --report lcov && genhtml lcov.info  --output-dir coverage",
+    "verify": "npx hardhat ignition verify chain-$CHAIN_ID",
     "deploy": "hardhat run scripts/deploy.ts --network $NETWORK"
   },
   "keywords": [],
@@ -17,6 +18,6 @@
     "hardhat": "^2.22.19"
   },
   "dependencies": {
-    "strategy-builder-plugin": "^1.0.0"
+    "strategy-builder-plugin": "^1.0.1"
   }
 }

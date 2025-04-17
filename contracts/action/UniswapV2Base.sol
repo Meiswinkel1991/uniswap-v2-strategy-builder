@@ -5,7 +5,7 @@ import {IUniswapV2Router01} from "@uniswap/v2-periphery/contracts/interfaces/IUn
 import {IUniswapV2Factory} from "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol";
 import {IUniswapV2Pair} from "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-
+import {IAction} from "strategy-builder-plugin/contracts/interfaces/IAction.sol";
 import {IUniswapV2Base} from "./interfaces/IUniswapV2Base.sol";
 
 contract UniswapV2Base is IUniswapV2Base {
@@ -193,6 +193,10 @@ contract UniswapV2Base is IUniswapV2Base {
 
     function getTokenForSelector(bytes4, bytes memory) external view virtual returns (address) {
         return address(0);
+    }
+
+    function supportsInterface(bytes4 interfaceId) public pure returns (bool) {
+        return interfaceId == type(IAction).interfaceId;
     }
 
     /*
